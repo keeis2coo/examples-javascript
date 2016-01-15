@@ -1,0 +1,26 @@
+	<head>
+		<script>
+			function displayImage(whichImage)
+				{
+					
+					document.imageForm.curImage.src = whichImage;
+					
+				}
+		</script>
+	</head>
+	
+	<body>
+		<form name="imageForm">
+		<img src="fire1.jpg" name="curImage">
+		<br>
+		<select name="imageList" onChange="displayImage(this.value);">
+			<option value="fire1.jpg"> Fire 1
+			<option value="fire2.jpg"> Fire 2
+			<option value="fire3.jpg"> Fire 3
+			<option value="fire4.jpg"> Fire 4
+		</select>
+			
+		</form>
+	
+	</body>
+</html>
